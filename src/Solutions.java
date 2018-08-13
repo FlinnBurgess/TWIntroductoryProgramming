@@ -27,7 +27,8 @@ public class Solutions {
                 triangle.triangleSolutions();
                 break;
             case "diamond":
-                //solutions.diamond();
+                Diamond diamond = new Diamond();
+                diamond.diamondSolutions();
                 break;
             case "fizzbuzz":
                 //solutions.fizzbuzz();
@@ -43,7 +44,6 @@ public class Solutions {
                 break;
             default:
                 solutions.printIncorrectArgsMessage();
-                return;
         }
     }
 
