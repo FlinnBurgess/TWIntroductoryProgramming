@@ -31,7 +31,8 @@ public class Solutions {
                 diamond.diamondSolutions();
                 break;
             case "fizzbuzz":
-                //solutions.fizzbuzz();
+                Fizzbuzz fizzbuzz = new Fizzbuzz();
+                fizzbuzz.solution();
                 break;
             case "primefactors":
                 if (args.length != 2) {
