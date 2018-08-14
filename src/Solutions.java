@@ -41,7 +41,8 @@ public class Solutions {
                 }
 
                 int n = Integer.parseInt(args[1]);
-                //solutions.primeFactors(n);
+                PrimeFactors primeFactors = new PrimeFactors();
+                primeFactors.generate(n);
                 break;
             default:
                 solutions.printIncorrectArgsMessage();
