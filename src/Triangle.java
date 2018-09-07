@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Triangle {
+    // Any reasoning for why the access to this variable is undeclared?
+    // Other classes have it private?
     Scanner reader = new Scanner(System.in);
 
     public void triangleSolutions() {
@@ -36,6 +38,7 @@ public class Triangle {
         System.out.println("");
     }
 
+    // Good reuse of another method
     private void printRightAngledTriangle(int n) {
         for (int i = 0; i <= n; i++) {
             printHorizontalLine(i);

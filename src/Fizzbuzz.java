@@ -1,4 +1,6 @@
 public class Fizzbuzz {
+    // TODO
+    // What is the minimum required variable access level here?
     private boolean divisibleByThree;
     private boolean divisibleByFive;
 
@@ -7,6 +9,9 @@ public class Fizzbuzz {
             divisibleByThree = i % 3 == 0;
             divisibleByFive = i % 5 == 0;
 
+            // TODO
+            // Is there a way to further simplify this method by removing code?
+            // what if this 'if' would disappear?
             if (divisibleByFive && divisibleByThree) {
                 System.out.println("FizzBuzz");
                 continue;

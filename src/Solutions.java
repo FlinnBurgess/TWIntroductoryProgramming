@@ -2,18 +2,24 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+// Unused imports.
 
 public class Solutions {
+    // TODO
+    // Unused variable declaration
     Scanner reader = new Scanner(System.in);
 
     public static void main(String args[]) {
         Solutions solutions = new Solutions();
 
+        // I understand why you needed this check here, but what if your solution
+        // didn't require upfront arguments?
         if (args.length != 1 && args.length != 2) {
             solutions.printIncorrectArgsMessage();
             return;
         }
 
+        // Variables and constants are better at the top of the method.
         List<String> validArgs = Arrays.asList("triangle", "diamond", "fizzbuzz", "primefactors");
 
         if (!validArgs.contains(args[0])) {
